@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>エリアマップ</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="areamap.css" media="all" />
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="areamap.js"></script>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="w542-box">
+            <div class="he-A">
+                <div class="title color">
+                    <h2 class="ico-A">エリアから物件検索を開始</h2>
+                </div>
+            </div>
+            <div class="multi-3">
+
+                <div style="width: 100%; height: 380px; position: relative; overflow: hidden;">
+                    <svg id="areamap" version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" x="0px" y="0px" viewBox="0,300,780,540">
+                        <g transform="matrix(1.3333333,0,0,-1.3333333,0,1122.52)" id="g10">
+                            <!--渋谷区エリア-->
+                            <a href="http://kamiyamacho.jp/yoyogi-area/">
+                                <path id="yoyogi-area" style="fill:#e9e6ba;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 360,540.001 h -89.999 v 60 H 360 Z" /></a>
+                            <a href="http://kamiyamacho.jp/uehara-oyamacho-area/">
+                                <path id="oyamacho-area" style="fill:#e9e6ba;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 130,370.002 H 40 v 229.999 h 90 z" /></a>
+                            <a href="http://kamiyamacho.jp/tomigaya-area/">
+                                <path id="tomigaya-area" style="fill:#e9e6ba;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 290,420.001 H 140.001 v 180 h120 v -70 h 20 H 290 Z" /></a>
+                            <a href="http://kamiyamacho.jp/shibuya-area/">
+                                <path id="shibuya-area" style="fill:#e9e6ba;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 360,380.001 h -80 v 30 h 20 v 120  H 360 Z" /></a>
+                            <a href="http://kamiyamacho.jp/shoto-area/">
+                                <path id="shoto-area" style="fill:#e9e6ba;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 200,310.001 h -59.999 v 100 H 200 Z" /></a>
+                            <a href="http://kamiyamacho.jp/kamiyamacho-area/">
+                                <path id="kamiyamacho-area" style="fill:#e9e6ba;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 270,310.001 h -59.999 v 100 H 270 Z" /></a>
+                            <a href="http://kamiyamacho.jp/ebisu-hiro-area/">
+                                <path id="ebisu-area" style="fill:#e9e6ba;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 280,280.001 h 50 v 60 h 30 v 30 H280 z" /></a>
+                            <!--港区エリア-->
+                            <a href="http://kamiyamacho.jp/akasaka-area/">
+                                <path id="akasaka-area" style="fill:#d2dfba;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 540,520.001 H 370 v 80 h 170 z" /></a>
+                            <a href="http://kamiyamacho.jp/aoyama-area/">
+                                <path id="aoyama-area" style="fill:#d2dfba;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 450,340.001 h -80 v 170 h 80 z" /></a>
+                            <a href="http://kamiyamacho.jp/roppongi-area/">
+                                <path id="roppongi-area" style="fill:#d2dfba;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 540,340.001 h -80 v 170 h 80 z" /></a>
+                            <a href="http://kamiyamacho.jp/azabu-area/">
+                                <path id="azabu-area" style="fill:#d2dfba;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 540,280.001 H 340 v 50 h 200 z" /></a>
+                            <a href="http://kamiyamacho.jp/shirokane-takanawa-area/">
+                                <path id="shirokane-area" style="fill:#d2dfba;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 540.001,220 H 340 v 50.001 h 200.001 z" /></a>
+                            <!--目黒区エリア-->
+                            <a href="http://kamiyamacho.jp/meguro-area/">
+                                <path id="meguro-area" style="fill:#c6dde7;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 40,220.001 h 290 v 50 h -60 v 30 h -140 v 60 H 40  z" /></a>
+
+                            <!--外枠-->
+                            <path id="fream" style="fill:none;stroke:#231f20;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" d="M 540,220.001 H 40 v 380 h 500 z" />
+
+
+                            <text id="text55" style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:30px;font-family:'A-OTF Shin Go Pro B';-inkscape-font-specification:ShinGoPro-Bold;writing-mode:lr-tb;fill:#3f847d;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1,0,0,-1,423.2119,357.5449)">
+                                <tspan id="tspan48" y="0" x="0 30">港区</tspan>
+                            </text>
+                            <text id="text56" style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:30px;font-family:'A-OTF Shin Go Pro B';-inkscape-font-specification:ShinGoPro-Bold;writing-mode:lr-tb;fill:#827c34;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1,0,0,-1,423.2119,357.5449)">
+                                <tspan id="tspan50" y="-182.46001" x="-323.22 -293.22 -263.22">渋谷区</tspan>
+                            </text>
+                            <!--目黒区テキスト-->
+                            <text id="meguro" style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:30px;font-family:'A-OTF Shin Go Pro B';-inkscape-font-specification:ShinGoPro-Bold;writing-mode:lr-tb;fill:#1d688b;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1,0,0,-1,423.2119,357.5449)">
+                                <a href="http://kamiyamacho.jp/meguro-area/">
+                                    <tspan id="tspan52" y="102.48" x="-297.17999 -267.17999 -237.17999">目黒区</tspan>
+                                </a>
+                            </text>
+
+
+                            <text id="text84" style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:'A-OTF Shin Go Pro B';-inkscape-font-specification:ShinGoPro-Bold;writing-mode:lr-tb;fill:#4f4c4d;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1,0,0,-1,58,490)">
+                                <!--渋谷区テキスト-->
+                                <a href="http://kamiyamacho.jp/yoyogi-area/">
+                                    <tspan id="yoyogi" y="-74.466003" x="232.002 250.002 268.00201">代々木</tspan>
+                                </a>
+                                <a href="http://kamiyamacho.jp/uehara-oyamacho-area/">
+                                    <tspan class="oyamacho" y="0" x="0 18 36">代々木</tspan>
+                                    <tspan class="oyamacho" y="19.997999" x="9 27">上原</tspan>
+                                    <tspan class="oyamacho" y="59.993999" x="0 18 36">大山町</tspan>
+                                </a>
+                                <a href="http://kamiyamacho.jp/tomigaya-area/">
+                                    <tspan id="tomigaya" y="9.9899998" x="129.34801 147.34801 165.34801">富ヶ谷</tspan>
+                                </a>
+                                <a href="http://kamiyamacho.jp/shibuya-area/">
+                                    <tspan id="shibuya" y="40.014" x="255.006 273.00601">渋谷</tspan>
+                                </a>
+                                <a href="http://kamiyamacho.jp/shoto-area/">
+                                    <tspan id="shoto" y="135.68401" x="93.599998 111.6">松濤</tspan>
+                                </a>
+                                <a href="http://kamiyamacho.jp/kamiyamacho-area/">
+                                    <tspan id="kamiyamacho" y="135.68401" x="155.26801 173.26801 191.26801">神山町</tspan>
+                                </a>
+                                <a href="http://kamiyamacho.jp/ebisu-hiro-area/">
+                                    <tspan class="ebisu" y="141.06599" x="227.304 245.304 263.30399">恵比寿</tspan>
+                                    <tspan class="ebisu" y="173.07001" x="227.304 245.304">広尾</tspan>
+                                </a>
+                                　　　　　　　　　　　　　　　　　　
+                                <!--港区テキスト-->
+                                <a href="http://kamiyamacho.jp/akasaka-area/">
+                                    <tspan id="akasaka" y="-64.061996" x="378.79199 396.79199">赤坂</tspan>
+                                </a>
+                                <a href="http://kamiyamacho.jp/aoyama-area/">
+                                    <tspan id="aoyama" y="55.152" x="332.11801 350.11801 ">青山</tspan>
+                                </a>
+                                <a href="http://kamiyamacho.jp/roppongi-area/">
+                                    <tspan id="roppongi" y="55.152" x="415.242 433.242 451.242 ">六本木</tspan>
+                                </a>
+                                <a href="http://kamiyamacho.jp/azabu-area/">
+                                    <tspan id="azabu" y="189.468" x="364.51801 382.51801">麻布</tspan>
+                                </a>
+                                <a href="http://kamiyamacho.jp/shirokane-takanawa-area/">
+                                    <tspan id="shirokane" y="250.272" x="340.59601 358.59601 397.008 415.008">白金高輪</tspan>
+                                </a>
+                            </text>
+
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Code for &#19981;&#21205;&#29987;&#12507;&#12540;&#12512;&#12506;&#12540;&#12472;&#20316;&#25104;&#12469;&#12540;&#12499;&#12473;&#12300;&#12479;&#12454;&#12531;360&deg;&#12301; -->
+    <!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+
+
+</body></html>
