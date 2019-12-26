@@ -1,8 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="jp.joyworks.blog.dto.UserDTO" %>
 <%
 	//セッションスコープからユーザー情報を取得
-	String loginUser = (String) session.getAttribute("loginUser");
+	UserDTO loginUser = (UserDTO) session.getAttribute("loginUser");
+	String deletearticletitle = (String) session.getAttribute("deleteArticleTitle");
 %>
 
 <!DOCTYPE html>
@@ -18,10 +20,10 @@
 
 	<p>記事を削除しますか？
 	<p>
-	<p>記事1</p>
+	<p>記事名:<%= deletearticletitle %></p>
 
 	<form action="DeleteArticleServlet" method="post">
-	はい<input type="radio" name="deleteflg" value="1">
+	はい<input type="radio" name="deleteFlg" value="1">
 	いいえ<input type="radio">
 	<br>
 	<input type="submit" value="OK">
@@ -34,7 +36,7 @@
 	</p>
 
 	<p>
-		TOPは<a href="/Blog/TopPage.jsp">こちら</a>。
+		TOPは<a href="/Blog/TopPageServlet">こちら</a>。
 	</p>
 
 	<% } else { %>

@@ -23,8 +23,8 @@
 	登録したユーザー情報を入力してください。
 
 	<form action="/Blog/LoginServlet" method="post">
-		<span style="text-align: justify; text-justify: inter-ideograph;">ユーザー名：</span>
-		<input type="text" name="User_ID" required="required"><br>
+		<span style="text-align: justify; text-justify: inter-ideograph;">ユーザーID：</span>
+		<input type="email" name="User_ID" required="required"><br>
 		<span style="text-align: justify; text-justify: inter-ideograph;">パスワード：</span>
 		<input type="password" name="PASS" required="required"><br>
 		<input type="submit" value="ログイン">
@@ -32,7 +32,7 @@
 
 	<br>
 	<br> TOPページは
-	<a href="/Blog/TopPage.jsp">こちら</a>。
+	<a href="/Blog/TopPageServlet">こちら</a>。
 
 </body>
 </html>

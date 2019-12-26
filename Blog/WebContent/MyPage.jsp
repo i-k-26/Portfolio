@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page import="jp.joyworks.dto.blog.UserDTO" %>
+<%@ page import="jp.joyworks.blog.dto.UserDTO" %>
 <%
 	//セッションスコープからユーザー情報を取得
-	UserDTO login = (UserDTO)session.getAttribute("loginUser");
+	UserDTO loginuser = (UserDTO)session.getAttribute("loginUser");
 %>
 
 <!DOCTYPE html>
@@ -16,30 +16,27 @@
 
 <body>
 	<h1>マイページ</h1>
-	<% if (login != null) { %>
+	<% if (loginuser != null) { %>
 
 	<p>
-		ログインユーザー:<%= login.getName()%>さん
+		ログインユーザー:<%= loginuser.getName() %>さん
 	</p>
 	<p>管理者メニュー</p>
 
 	<br>
 
 	<p>新しく記事を書く</p>
-	<input type="button" value="書く"
-		onclick="location.href='/Blog/CreateArticle.jsp'">
-
-	<br>
+	<input type="button" value="書く" onclick="location.href='/Blog/UpeditArticle.jsp'">
 
 	<p>過去記事リスト</p>
-	<form action="/Blog/UserArticlesServlet" method="get">
+	<form action="/Blog/UserArticleListServlet" method="get">
 	<input type="submit" value="リスト">
 	</form>
 
 	<br><br><br>
 
 	TOPは
-	<a href="/Blog/TopPage.jsp">こちら</a>。
+	<a href="/Blog/TopPageServlet">こちら</a>。
 
 	<%	} else { %>
 
